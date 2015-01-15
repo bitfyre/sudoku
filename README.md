@@ -1,2 +1,3 @@
-# boilerplate
-Boilerplate for front end projects
+# Boilerplate
+
+Boilerplate for front end projects.
