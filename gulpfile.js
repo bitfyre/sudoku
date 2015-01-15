@@ -1,6 +1,7 @@
 var browserSync = require('browser-sync');
 var gulp = require('gulp');
 var jade = require('gulp-jade');
+var notify = require('gulp-notify');
 var path = require('path');
 var rename = require('gulp-rename');
 
@@ -13,7 +14,13 @@ gulp.task('html', function(){
     .pipe(jade({
       pretty: true
     }))
-    .pipe(gulp.dest(path.join(__dirname, 'build')));
+    .pipe(gulp.dest(path.join(__dirname, 'build')))
+    .pipe(notify({
+      message: 'HTML built'
+    }))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
 });
 
 gulp.task('browser-sync', function() {
@@ -25,4 +32,13 @@ gulp.task('browser-sync', function() {
     port: 1337,
     open: false
   });
+});
+
+gulp.task('watch',
+  [
+    'html',
+    'browser-sync'
+  ],
+  function() {
+    gulp.watch(path.join(__dirname, 'src/**/*.jade'), ['html']);
 });
