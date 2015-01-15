@@ -15,3 +15,14 @@ gulp.task('html', function(){
     }))
     .pipe(gulp.dest(path.join(__dirname, 'build')));
 });
+
+gulp.task('browser-sync', function() {
+  browserSync({
+    server: {
+      baseDir: path.join(__dirname, 'build')
+    },
+    host: 'localhost',
+    port: 1337,
+    open: false
+  });
+});
