@@ -5,14 +5,19 @@
 *   Define high level typography styling
 *   ========================================================================= */
 
+body {
+  font-family: #{$font-family};
+}
+
 h1 {
   @include font-size(28);
   text-align: center;
   font-family: #{$heading-family};
-  font-style: italic;
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 400;
 }
 
 td {
   text-align: center;
+  font-weight: 300;
 }
