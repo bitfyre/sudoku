@@ -1,0 +1,21 @@
+/*  ============================================================================
+*
+*   Banner
+*
+*   Module for styling app banner.
+*   ========================================================================= */
+
+.Banner {
+  @include clearfix();
+  background-color: $willow-charcoal;
+  padding-bottom: pxs2ems(4);
+  padding-bottom: pxs2rems(4);
+  margin-bottom: pxs2ems(24);
+  margin-bottom: pxs2rems(24);
+
+  &-heading {
+    @include font-size(24);
+    @include line-height(32, 24);
+    color: $stainless-steel;
+  }
+}
