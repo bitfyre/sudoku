@@ -1,3 +1,3 @@
-# Boilerplate
+# @bitfyre Sudoku
 
-Boilerplate for front end projects.
+A playable webbased sudoku UI.
