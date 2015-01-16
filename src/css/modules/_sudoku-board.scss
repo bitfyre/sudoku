@@ -1,0 +1,26 @@
+/*  ============================================================================
+*
+*   SudokuBoard
+*
+*   Module for styline the sudoku board
+*   ========================================================================= */
+
+.SudokuBoard {
+  border: 2px solid $willow-charcoal;
+
+  td {
+    border: 1px solid $willow-charcoal;
+    height: pxs2ems(30);
+    height: pxs2rems(30);
+
+    &:nth-child(3n) {
+      border-right: 2px solid $willow-charcoal;
+    }
+  }
+
+  tr:nth-child(3n) {
+    td {
+      border-bottom: 2px solid $willow-charcoal;
+    }
+  }
+}
