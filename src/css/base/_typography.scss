@@ -1,0 +1,18 @@
+/*  ============================================================================
+*
+*   Typography
+*
+*   Define high level typography styling
+*   ========================================================================= */
+
+h1 {
+  @include font-size(28);
+  text-align: center;
+  font-family: #{$heading-family};
+  font-style: italic;
+  font-weight: normal;
+}
+
+td {
+  text-align: center;
+}
