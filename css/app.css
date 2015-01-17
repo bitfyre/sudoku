@@ -569,11 +569,20 @@ td {
 *   Module for styline the sudoku board
 *   ========================================================================= */
 .SudokuBoard {
-  border: 2px solid #525150; }
+  border: 2px solid #525150;
+  margin-bottom: 2.28571em;
+  margin-bottom: 2.28571rem; }
   .SudokuBoard td {
     border: 1px solid #525150;
     height: 2.14286em;
     height: 2.14286rem; }
+    @media only screen and (min-width: 54.28571em) {
+      .SudokuBoard td {
+        font-size: 1.71429em;
+        font-size: 1.71429rem;
+        line-height: 1.33333;
+        height: 2.5em;
+        height: 4.28571rem; } }
     .SudokuBoard td:nth-child(3n) {
       border-right: 2px solid #525150; }
   .SudokuBoard tr:nth-child(3n) td {
@@ -605,3 +614,52 @@ td {
     border-radius: 3px; }
   .EditCell-input {
     display: inline-block; }
+
+/*  ============================================================================
+*
+*   Btn
+*
+*   Basic button module
+*   ========================================================================= */
+.Btn {
+  color: #fcfaf9;
+  font-weight: 300;
+  background-color: #4ebab2;
+  width: 100%;
+  border: none;
+  border-radius: 2px; }
+  .Btn:hover, .Btn:focus {
+    background-color: #3c9992; }
+  .Btn_medium {
+    font-size: 0.85714em;
+    font-size: 0.85714rem;
+    line-height: 1.5;
+    padding: 0.58333em 1em;
+    padding: 0.5rem 0.85714rem; }
+  .Btn_large {
+    font-size: 1em;
+    font-size: 1rem;
+    line-height: 1.28571;
+    padding: 1.07143em 1.71429em;
+    padding: 1.07143rem 1.71429rem; }
+
+/*  Layout
+*   ========================================================================= */
+/*  ============================================================================
+*
+*   Layout
+*
+*   Layout related css
+*   ========================================================================= */
+body {
+  padding-bottom: 6.14286em;
+  padding-bottom: 6.14286rem; }
+
+.l-wrap {
+  max-width: 25.71429rem;
+  padding: 0 0.85714em;
+  padding: 0 0.85714rem;
+  margin: 0 auto; }
+  @media only screen and (min-width: 54.28571em) {
+    .l-wrap {
+      max-width: 48.57143rem; } }
