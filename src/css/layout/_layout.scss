@@ -16,5 +16,9 @@ body {
     padding: 0 pxs2ems(12);
     padding: 0 pxs2rems(12);
     margin: 0 auto;
+
+    @include mq($large-screen) {
+      max-width: pxs2rems(680);
+    }
   }
 }

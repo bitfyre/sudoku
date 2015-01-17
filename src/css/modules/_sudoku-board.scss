@@ -15,6 +15,13 @@
     height: pxs2ems(30);
     height: pxs2rems(30);
 
+    @include mq($large-screen) {
+      @include font-size(24);
+      @include line-height(32, 24);
+      height: pxs2ems(60, 24);
+      height: pxs2rems(60);
+    }
+
     &:nth-child(3n) {
       border-right: 2px solid $willow-charcoal;
     }
