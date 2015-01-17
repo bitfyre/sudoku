@@ -7,6 +7,8 @@
 
 .SudokuBoard {
   border: 2px solid $willow-charcoal;
+  margin-bottom: pxs2ems(32);
+  margin-bottom: pxs2rems(32);
 
   td {
     border: 1px solid $willow-charcoal;
